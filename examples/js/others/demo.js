@@ -26,7 +26,9 @@ class Demo extends React.Component {
         </Panel>
         <Panel header={ 'Add a footer' }>
           <h5>Source in /examples/js/others/table-with-footer.js</h5>
-          <h5>Add a footer to the table.  If the string is not specified uses the same as the header.</h5>
+          <h5>
+            Add a footer to the table.  If the string is not specified uses the same as the header.
+          </h5>
           <TableWithFooter/>
         </Panel>
       </Col>

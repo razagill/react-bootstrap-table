@@ -13,6 +13,7 @@ class TableHeader extends Component {
     }, this.props.tableFooterClass);
     let selectRowHeaderCol = null;
     if (!this.props.hideSelectColumn) selectRowHeaderCol = this.renderSelectRowHeader();
+    let i = 0;
     return (
       <div ref='container' className={ containerClasses } style={ this.props.style }>
         <table className={ tableClasses }>
@@ -21,8 +22,10 @@ class TableHeader extends Component {
               { selectRowHeaderCol }
               {
                 this.props.children.map( child => {
-                  console.log('child ', child);
-                  return <td>{ child.props.footerText || child.props.children }</td>;
+                  return (
+                    <td key={ 'tf_' + i++ }>
+                      { child.props.footerText || child.props.children }
+                    </td>);
                 })
               }
             </tr>
