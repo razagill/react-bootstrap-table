@@ -1692,6 +1692,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }, this.props.tableFooterClass);
 	      var selectRowHeaderCol = null;
 	      if (!this.props.hideSelectColumn) selectRowHeaderCol = this.renderSelectRowHeader();
+	      var i = 0;
 	      return _react2['default'].createElement(
 	        'div',
 	        { ref: 'container', className: containerClasses, style: this.props.style },
@@ -1706,10 +1707,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	              { ref: 'footer' },
 	              selectRowHeaderCol,
 	              this.props.children.map(function (child) {
-	                console.log('child ', child);
 	                return _react2['default'].createElement(
 	                  'td',
-	                  null,
+	                  { key: 'tf_' + i++ },
 	                  child.props.footerText || child.props.children
 	                );
 	              })
