@@ -6657,7 +6657,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    customFilterParameters: _react.PropTypes.object
 	  }),
 	  sortIndicator: _react.PropTypes.bool,
-	  footerText: _react2['default'].PropTypes.oneOfType([_react2['default'].PropTypes.string, _react2['default'].PropTypes.number])
+	  footerText: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.number])
 	};
 
 	TableHeaderColumn.defaultProps = {

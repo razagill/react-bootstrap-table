@@ -162,9 +162,9 @@ TableHeaderColumn.propTypes = {
     customFilterParameters: PropTypes.object
   }),
   sortIndicator: PropTypes.bool,
-  footerText: React.PropTypes.oneOfType([
-    React.PropTypes.string,
-    React.PropTypes.number
+  footerText: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
   ])
 };
 

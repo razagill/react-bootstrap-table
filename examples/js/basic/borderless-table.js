@@ -22,7 +22,7 @@ addProducts(5);
 export default class BorderlessTable extends React.Component {
   render() {
     return (
-      <BootstrapTable data={ products } bordered={ false } showFooter={ true }>
+      <BootstrapTable data={ products } bordered={ false }>
           <TableHeaderColumn dataField='id' isKey={ true }>Product ID</TableHeaderColumn>
           <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
           <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
