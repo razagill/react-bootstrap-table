@@ -21,7 +21,7 @@ class TableHeader extends Component {
             <tr ref='footer'>
               { selectRowHeaderCol }
               {
-                this.props.children.map( child => {
+                React.Children.map(this.props.children, (child) => {
                   return (
                     <td key={ 'tf_' + i++ }>
                       { child.props.footerText || child.props.children }
