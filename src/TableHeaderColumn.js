@@ -218,6 +218,10 @@ TableHeaderColumn.propTypes = {
     customFilterParameters: PropTypes.object
   }),
   sortIndicator: PropTypes.bool,
+  footerText: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
   export: PropTypes.bool
 };
 
@@ -245,7 +249,8 @@ TableHeaderColumn.defaultProps = {
   formatExtraData: undefined,
   sortFuncExtraData: undefined,
   filter: undefined,
-  sortIndicator: true
+  sortIndicator: true,
+  footerText: undefined
 };
 
 export default TableHeaderColumn;
